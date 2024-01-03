@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+</head>
+<body>
+   <div class="container" >
+     <div class="container1">
+      <div class="amyrobson main-message">
+        <div class="add-remove">
+          <button class="add" id="firstcom" onclick="type(event)">
+            <img src="images/icon-plus.svg" alt="plus" id="firstcom" >
+          </button>
+          <p>7</p>
+          <button class="minus" onclick="remove()">
+            <img src="images/icon-minus.svg" alt="minus" onclick="remove()">
+          </button>
+        </div>
+        <div class="content">
+          <div class="head">
+            <div class="head-about">
+              <img src="images/avatars/image-amyrobson.png" alt="amyrobson">
+              <p class="name">amyrobson</p>
+              <p class="time">1month ago</p>
+            </div>
+            <div class="reply"  id="firstcom" onclick="type(event)">
+              <img src="images/icon-reply.svg" alt="reply" id="firstcom">
+              <p id="firstcom">Reply</p>
+            </div>
+          </div>
+          <p class="message">Impressive! Though it seems the drag feature could be improved. But overall  it   <br>looks incredible. You've nailed the design and the responsiveness at various <br> breakpoints works really well.</p>
+        </div>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+       <div class="comments">
+      <!-- <div class="amyrobson main-message">
+            <div class="add-remove">
+              <button class="add">
+                <img src="images/icon-plus.svg" alt="plus">
+              </button>
+              <p>7</p>
+              <button class="minus">
+                <img src="images/icon-minus.svg" alt="minus">
+              </button>
+            </div>
+            <div class="content">
+              <div class="head">
+                <div class="head-about">
+                  <img src="images/avatars/image-amyrobson.png" alt="amyrobson">
+                  <p class="name">amyrobson</p>
+                  <p class="time">1month ago</p>
+                </div>
+                <div class="reply" id="reply">
+                  <img src="images/icon-reply.svg" alt="reply">
+                  <p>Reply</p>
+                </div>
+              </div>
+              <p class="message">Impressive! Though it seems the drag feature could be improved. But overall  it   <br>looks incredible. You've nailed the design and the responsiveness at various <br> breakpoints works really well.</p>
+            </div> 
+          </div>-->
+<!--------------------------------------------------------------------------------------------------->
+          <div class="reply-bar new">
+            <div>
+              <img src="images/avatars/image-juliusomo.png" alt="image-juliusomo">
+              <p>
+                <textarea name="textarea" id="textarea" cols="58" rows="4" placeholder="Type your Reply"></textarea>
+              </p>
+            </div>
+            <div class="reply-reply" id="firstcom" name="seelan"><p id="firstcom" name='seelan'>Reply</p></div>
+          </div>
+        </div>    
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="reply-bar">
+        <div>
+          <img src="images/avatars/image-juliusomo.png" alt="image-juliusomo">
+          <p>
+            <textarea name="textarea" id="textarea" cols="60" rows="4" placeholder="Type your Reply"></textarea>
+          </p>
+        </div>
+        <div class="reply-reply" id="reply-reply" custom='firstcom' onclick="get(event)"><p id="reply-reply" custom='firstcom'>Reply</p></div>
+      </div>
+    </div>  
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container1">
+      <div class="maxblagun main-message">
+        <div class="add-remove">
+          <button class="add" id="seccom" onclick="type(event)">
+            <img src="images/icon-plus.svg" alt="plus" id="seccom">
+          </button>
+          <p>5</p>
+          <button class="minus">
+            <img src="images/icon-minus.svg" alt="minus">
+          </button>
+        </div>
+        <div class="content">
+          <div class="head">
+            <div class="head-about">
+              <img src="images/avatars/image-maxblagun.png" alt="amyrobson">
+              <p class="name">maxblagun</p>
+              <p class="time">2weeks ago</p>
+            </div>
+            <div class="reply" id="seccom" onclick="type(event)">
+              <img src="images/icon-reply.svg" alt="reply" id="seccom">
+              <p id="seccom">Reply</p>
+            </div>
+          </div>
+          <p class="message">Woah, your project looks awesome! How long have you been coding for? I'm still <br> new, but think I want to dive into React as well soon. Perhaps you can give me an <br> insight on where I can learn React? Thanks!</p>
+        </div>
+      </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->      
+      <div class="comments">
+       <!-- <div class="amyrobson main-message">
+           <div class="add-remove">
+             <button class="add">
+               <img src="images/icon-plus.svg" alt="plus">
+             </button>
+             <p>7</p>
+             <button class="minus">
+               <img src="images/icon-minus.svg" alt="minus">
+             </button>
+           </div>
+           <div class="content">
+             <div class="head">
+               <div class="head-about">
+                 <img src="images/avatars/image-amyrobson.png" alt="amyrobson">
+                 <p class="name">amyrobson</p>
+                 <p class="time">1month ago</p>
+               </div>
+               <div class="reply" id="reply">
+                 <img src="images/icon-reply.svg" alt="reply">
+                 <p>Reply</p>
+               </div>
+             </div>
+             <p class="message">Impressive! Though it seems the drag feature could be improved. But overall  it   <br>looks incredible. You've nailed the design and the responsiveness at various <br> breakpoints works really well.</p>
+           </div>
+         </div>-->
+       
+         <div class="reply-bar">
+           <div>
+             <img src="images/avatars/image-juliusomo.png" alt="image-juliusomo">
+             <p>
+               <textarea name="textarea" id="textarea" cols="58" rows="4" placeholder="Type your Reply"></textarea>
+             </p>
+           </div>
+           <div class="reply-reply"><p>Reply</p></div>
+         </div>
+       </div>    
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      <div class="reply-bar">
+        <div>
+          <img src="images/avatars/image-juliusomo.png" alt="image-juliusomo">
+          <p>
+            <textarea name="textarea" id="textarea" cols="60" rows="4" placeholder="Type your Reply"></textarea>
+          </p>
+        </div>
+        <div class="reply-reply" id="reply-reply" onclick="get(event)" custom="seccom"><p id="reply-reply" onclick="get(event)" custom="seccom">Reply</p></div>
+      </div>
+      
+    </div>
+   </div>
+   <script src="script.js"></script>
+   <script src="script1.js"></script>
+</body>
+</html>

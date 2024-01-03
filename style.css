@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Rubik:wght@400;500;700&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "Rubik";
+    color:hsl(211, 10%, 45%);
+}
+body{
+    width:100%;
+    background-color: hsl(223, 10%, 87%);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:10px;
+   
+}
+.container{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container>.container1>.main-message{
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom:15px;
+
+}
+.container>.container1>.main-message>.add-remove{
+    width:20px;
+    height:55px;
+    border-radius: 5px;
+    background-color: hsl(223, 10%, 87%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right:15px;
+    padding:2px;
+    font-size: 14px;
+    font-family: 'Rubik';
+ 
+
+}
+.container>.container1>.main-message>.add-remove>p{
+    font-weight:600;
+
+    color: hsl(238, 40%, 52%);
+}
+.container>.container1>.main-message>.add-remove>button{
+    outline: none;
+    border:none;
+    background-color: transparent;
+
+}
+.container>.container1>.main-message>.add-remove>button:hover{
+    filter:invert(50%)
+}
+.container>.container1>.content{
+    display:flex;
+}
+.container>.container1>.main-message>.content>.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.container>.container1>.main-message>.content>.head>.head-about{
+    display: flex;
+}
+.container>.container1>.main-message>.content>.head>.head-about>img{
+    height:25px;
+    margin-right:10px;
+}
+.container>.container1>.main-message>.content>.head>.head-about>.name{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+
+}
+.container>.container1>.main-message>.content>.head>.reply{
+    display:flex;
+}
+.container>.container1>.main-message>.content>.head>.reply>img{
+    height:12px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.container>.container1>.main-message>.content>.head>.reply>p{
+    font-size: 15px;
+
+    font-weight: 800;
+    color:hsl(238, 40%, 52%);
+
+}
+.container>.container1>.main-message>.content>.message{
+    margin-bottom:10px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.container>.container1>.reply-bar{
+    display:flex;
+    background-color:white ;
+    margin-bottom: 15px;
+    padding:15px;
+    justify-content: space-between;
+    border-radius: 10px;
+    display: none;
+
+}
+.container>.container1>.reply-bar>div{
+    display:flex;
+    
+}
+.container>.container1>.reply-bar>div>img{
+    height:28px;
+    margin-right: 10px;
+}
+.container>.container1>.reply-bar>div>p>textarea{
+    border-radius: 10px;
+    padding:10px;
+    outline:none;
+}
+.container>.container1>.reply-bar>.reply-reply{
+    width:100px;
+    height:35px;
+    background-color:  hsl(238, 40%, 52%);
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.container>.container1>.reply-bar>.reply-reply>p{
+    color:white;
+    font-size: 14px;
+}
+.container>.container1>.reply-bar>div>p>textarea:focus{
+    border:2px solid  hsl(238, 40%, 52%);
+}
+/*-------------------------------------------------------------------------------*/
+
+/*  COMENTS*/
+.container>.container1>.comments{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+}
+.container>.container1>.comments>.main-message{
+    display: flex;
+    padding: 7px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom:15px;
+    width:600px;
+  
+  }
+  .container>.container1>.comments>.main-message>.add-remove{
+      width:20px;
+      height:55px;
+      border-radius: 5px;
+      background-color: hsl(223, 10%, 87%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-right:15px;
+      padding:2px;
+      font-size: 14px;
+      font-family: 'Rubik';
+   
+  
+  }
+  .container>.container1>.comments>.main-message>.add-remove>p{
+      font-weight:600;
+  
+      color: hsl(238, 40%, 52%);
+  }
+  .container>.container1>.comments>.main-message>.add-remove>button{
+      outline: none;
+      border:none;
+      background-color: transparent;
+  
+  }
+  .container>.container1>.comments.main-message>.add-remove>button:hover{
+      filter:invert(50%)
+  }
+  .container>.container1>.content{
+      display:flex;
+  }
+  .container>.container1>.comments>.main-message>.content>.head{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width:100%;
+
+  }
+  .container>.container1>.comments>.main-message>.content>.head>.head-about{
+      display: flex;
+  }
+  .container>.container1>.comments>.main-message>.content>.head>.head-about>img{
+      height:25px;
+      margin-right:10px;
+  }
+  .container>.container1>.comments>.main-message>.content>.head>.head-about>.name{
+      margin-right: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+  
+  }
+  .container>.container1>.comments>.main-message>.content>p{
+    width:100%;
+  }
+  .container>.container1>.comments>.main-message>.content>.head>.reply{
+      display:flex;
+  }
+  .container>.container1>.comments>.main-message>.content>.head>.reply>img{
+      height:12px;
+      margin-top: 3px;
+      margin-right: 10px;
+  }
+  .container>.container1>.comments>.main-message>.content>.head>.reply>p{
+      font-size: 15px;
+  
+      font-weight: 800;
+      color:hsl(238, 40%, 52%);
+  
+  }
+  .container>.container1>.comments>.main-message>.content>.message{
+      margin-bottom:10px;
+  }
+  .container>.container1>.comments>.main-message>.content>p{
+    width:550px;
+  }
+  /*-----------------------------------------------------------------------------------------------------------*/
+  .container>.container1>.comments>.reply-bar{
+      display:flex;
+      background-color:white ;
+      margin-bottom: 15px;
+      padding:10px;
+      justify-content: space-between;
+      border-radius: 10px;
+      display: none;
+
+  }
+  .container>.container1>.comments>.reply-bar>div{
+      display:flex;
+      
+  }
+  .container>.container1>.comments>.reply-bar>div>img{
+      height:28px;
+      margin-right: 10px;
+  }
+  .container>.container1>.comments>.reply-bar>div>p>textarea{
+      border-radius: 10px;
+      padding:10px;
+      outline:none;
+  }
+  .container>.container1>.comments>.reply-bar>.reply-reply{
+      width:100px;
+      height:35px;
+      background-color:  hsl(238, 40%, 52%);
+      border-radius: 8px;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      margin-left: 15px;
+  }
+  .container>.container1>.comments>.reply-bar>.reply-reply>p{
+      color:white;
+      font-size: 14px;
+  }
+  .container>.container1>.comments>.reply-bar>div>p>textarea:focus{
+      border:2px solid  hsl(238, 40%, 52%);
+  }
